@@ -3,18 +3,26 @@ import requests
 import re
 
 def profile_header():
-
-
     # Função para buscar dados do GitHub
     def get_github_stats(username):
+        if not isinstance(username, str) or not username.strip():
+            return {'error': 'Username inválido'}
+
+        headers = {'User-Agent': 'Python GitHub Stats Fetcher'}
+
         try:
-            repos = requests.get(f"https://api.github.com/users/{username}/repos").json()
+            response = requests.get(f"https://api.github.com/users/{username}/repos", headers=headers)
+            response.raise_for_status()  # Lança uma exceção para códigos de status HTTP 4xx/5xx
+            repos = response.json()
+
             return {
                 'repos': len(repos),
                 'stars': sum(repo['stargazers_count'] for repo in repos)
             }
-        except:
-            return {'repos': 8, 'stars': 15}
+        except requests.exceptions.RequestException as e:
+            return {'error': f'Erro ao buscar dados do GitHub: {str(e)}'}
+        except ValueError as e:
+            return {'error': f'Erro ao decodificar JSON: {str(e)}'}
 
     # Seção Principal
     with st.container():
@@ -56,7 +64,6 @@ def profile_header():
                 - **Web**: Streamlit, Flask, Django
                 - **Bancos de Dados**: MySQL, SQLite, MongoDB
                 """)
-
 
 
 if __name__ == "__main__":
