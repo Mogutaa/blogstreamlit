@@ -29,8 +29,8 @@ def profile_header():
             
             st.markdown("""
             ### 🌐 Conecte-se
-            [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/alanjose)
-            [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin)](https://linkedin.com/in/alanjose)
+            [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/Mogutaa)
+            [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin)](https://www.linkedin.com/in/alan-jose-filho/)
             """)
 
         with col2:
