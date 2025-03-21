@@ -123,48 +123,82 @@ Se você usar este projeto em seu trabalho, por favor cite:
 
 ```bibtex
 @misc{blogstreamlit,
-  author = {Seu Nome},
+  author = {Alan José},
   title = {BlogStreamlit},
-  year = {2024},
+  year = {2025},
   publisher = {GitHub},
   journal = {Repositório GitHub},
-  howpublished = {\url{https://github.com/seu-usuario/blogstreamlit}}
+  howpublished = {\url{https://github.com/Mogutaa/blogstreamlit}}
 }
 ```
 
----
-
-## 📜 Criando o Arquivo de Licença
-
-Crie um arquivo `LICENSE` com o texto completo da [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.txt).
-
----
 
 ## 📑 Documentação Adicional
 
 ### `requirements.txt`
 
 ```txt
-streamlit
-sqlalchemy
-passlib
-python-dotenv
+altair==5.5.0
+attrs==25.3.0
+bcrypt==4.3.0
+blinker==1.9.0
+cachetools==5.5.2
+captcha==0.7.1
+certifi==2025.1.31
+cffi==1.17.1
+charset-normalizer==3.4.1
+click==8.1.8
+colorama==0.4.6
+cryptography==44.0.2
+dnspython==2.7.0
+extra-streamlit-components==0.1.71
+gitdb==4.0.12
+GitPython==3.1.44
+idna==3.10
+Jinja2==3.1.6
+jsonschema==4.23.0
+jsonschema-specifications==2024.10.1
+Markdown==3.7
+MarkupSafe==3.0.2
+narwhals==1.31.0
+numpy==2.2.4
+packaging==24.2
+pandas==2.2.3
+pillow==11.1.0
+plotly==6.0.1
+prettytable==3.15.1
+protobuf==5.29.3
+pyarrow==19.0.1
+pycparser==2.22
+pydeck==0.9.1
+pyecharts==2.0.8
+PyJWT==2.10.1
+pymongo==4.11.3
+python-dateutil==2.9.0.post0
+python-decouple==3.8
+python-dotenv==1.0.1
+pytz==2025.1
+PyYAML==6.0.2
+referencing==0.36.2
+requests==2.32.3
+rpds-py==0.23.1
+simplejson==3.20.1
+six==1.17.0
+smmap==5.0.2
+streamlit==1.43.2
+streamlit-aggrid==1.1.2
+streamlit-authenticator==0.2.2
+streamlit-echarts==0.4.0
+streamlit-elements==0.1.0
+tenacity==9.0.0
+toml==0.10.2
+tornado==6.4.2
+typing_extensions==4.12.2
+tzdata==2025.1
+urllib3==2.3.0
+watchdog==6.0.0
+wcwidth==0.2.13
 ```
 
-### `.gitignore`
 
-```txt
-__pycache__/
-*.pyc
-.env
-venv/
-*.sqlite
-```
 
-### 📘 Desenvolvimento Avançado (Opcional)
-
-Crie um arquivo `docs/DEVELOPMENT.md` com detalhes sobre o desenvolvimento interno do projeto.
-
----
-
-🚀 **Vamos construir algo incrível!**
