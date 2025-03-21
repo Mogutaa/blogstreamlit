@@ -37,7 +37,7 @@ def profile_header():
             st.title("Alan José", anchor=False)
             st.markdown("""
             #### **Desenvolvedor Backend e Analista de Dados**  
-            ##### *Python | Análise de Dados | Soluções Tech*
+            ##### *Python | Análise de Dados | Entusiasta de IA*
             """)
             
             github_stats = get_github_stats("Mogutaa")
