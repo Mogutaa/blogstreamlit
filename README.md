@@ -1,30 +1,49 @@
 # BlogStreamlit 🚀
 
 [![Licença CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Feito com Streamlit](https://img.shields.io/badge/Feito%20com-Streamlit-FF4B4B)](https://streamlit.io)
+[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)](https://python.org)
 
 Um blog moderno com autenticação de usuários, chatbot integrado e painel administrativo, desenvolvido com Streamlit e Python.
 
 ![Captura de Tela](images/demo.png) <!-- Adicione suas imagens na pasta /images -->
 
+---
+
 ## 📦 Recursos Principais
-- Autenticação segura de usuários
-- Chatbot com histórico de conversas
-- CRUD para posts e comentários
-- Painel administrativo
-- Design responsivo com componentes personalizados
-- Banco de dados integrado
+- 🔐 **Autenticação segura** de usuários
+- 🤖 **Chatbot** com histórico de conversas
+- ✍️ **CRUD** para posts e comentários
+- 🛠️ **Painel administrativo** para gerenciamento
+- 🎨 **Design responsivo** com componentes personalizados
+- 🗄️ **Banco de dados integrado** para armazenamento eficiente
+
+---
 
 ## ⚙️ Instalação
+
+Clone o repositório e instale as dependências:
+
 ```bash
+# Clone o repositório
 git clone https://github.com/seu-usuario/blogstreamlit.git
 cd blogstreamlit
+
+# Instale as dependências
 pip install -r requirements.txt
-🚀 Como Executar
-bash
-Copy
+```
+
+### 🚀 Como Executar
+
+```bash
 streamlit run main.py
-� Estrutura do Projeto
-Copy
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```bash
 blogstreamlit/
 ├── auth.py          # Autenticação de usuários
 ├── chatbot.py       # Lógica do chatbot
@@ -37,97 +56,72 @@ blogstreamlit/
 │   ├── header.py       # Cabeçalho da aplicação
 │   └── styles.py       # Estilos CSS personalizados
 └── images/          # Assets visuais
-📄 Licença
-Este projeto está licenciado sob Creative Commons Attribution 4.0 International License. Você pode:
+```
 
-Compartilhar e adaptar o código
+---
 
-Usar para fins comerciais
+## 📄 Licença
 
-Condição: Deve dar os devidos créditos ao autor original.
+Este projeto está licenciado sob a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Você pode:
 
-👥 Contribuição
-Contribuições são bem-vindas! Siga estes passos:
+✅ Compartilhar e adaptar o código
+✅ Usar para fins comerciais
+❗ Condição: Deve dar os devidos créditos ao autor original.
 
-Faça um Fork do projeto
+---
 
-Crie sua Branch (git checkout -b feature/nova-feature)
+## 👥 Contribuição
 
-Faça Commit das mudanças (git commit -m 'Adiciona nova feature')
+Contribuições são bem-vindas! Para contribuir, siga estes passos:
 
-Push para a Branch (git push origin feature/nova-feature)
+1. Faça um **Fork** do projeto
+2. Crie sua **Branch** (`git checkout -b feature/nova-feature`)
+3. Faça **Commit** das mudanças (`git commit -m 'Adiciona nova feature'`)
+4. **Push** para a Branch (`git push origin feature/nova-feature`)
+5. Abra um **Pull Request**
 
-Abra um Pull Request
+---
 
-🙌 Créditos
-Desenvolvido por Seu Nome
+## 🛠️ Guia de Desenvolvimento
 
-Copy
+### 📏 Padrões de Código
 
-# Licença (LICENSE)
-Crie um arquivo `LICENSE` com o texto completo da [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.txt)
+- Seguir a **PEP8** para formatação de código
+- Utilizar **Docstrings Google Style** para documentação
 
-# Documentação Adicional
+### ✅ Testes
 
-1. **requirements.txt**
-```txt
-streamlit
-sqlalchemy
-passlib
-python-dotenv
-.gitignore
+Execute os testes com **pytest**:
 
-gitignore
-Copy
-__pycache__/
-*.pyc
-.env
-venv/
-*.sqlite
-docs/DEVELOPMENT.md (opcional)
-
-markdown
-Copy
-## Guia de Desenvolvimento
-
-### Padrões de Código
-- PEP8
-- Docstrings Google Style
-
-### Testes
 ```bash
 pytest tests/
-Ambiente
-Recomendado:
+```
 
-Python 3.9+
+### 🌍 Ambiente Recomendado
 
-Virtualenv
+- **Python 3.9+**
+- **Virtualenv** para isolamento do ambiente
 
-Copy
+---
 
-# Sugestões Extras:
+## ❓ Perguntas Frequentes (FAQ)
 
-1. **Badges Personalizadas** (no README):
-```markdown
-[![Feito com Streamlit](https://img.shields.io/badge/Feito%20com-Streamlit-FF4B4B)](https://streamlit.io)
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue)](https://python.org)
-Seção de FAQ:
+🔹 **Como personalizar o chatbot?**  
+Modifique o arquivo `chatbot.py` e adicione novas intenções no dicionário `intents`.
 
-markdown
-Copy
-## ❓ Perguntas Frequentes
+🔹 **Posso usar outro banco de dados?**  
+Sim! Basta modificar `database.py` para se conectar ao banco desejado.
 
-**Como personalizar o chatbot?**
-Modifique o arquivo `chatbot.py` e adicione novas intenções no dicionário `intents`
-Exemplo de Citação:
+🔹 **O projeto roda em Docker?**  
+Ainda não, mas contribuições para adicionar suporte a Docker são bem-vindas!
 
-markdown
-Copy
+---
+
 ## 📚 Citação
-Se usar este projeto em seu trabalho, cite:
-bibtex
-Copy
+
+Se você usar este projeto em seu trabalho, por favor cite:
+
+```bibtex
 @misc{blogstreamlit,
   author = {Seu Nome},
   title = {BlogStreamlit},
@@ -136,3 +130,41 @@ Copy
   journal = {Repositório GitHub},
   howpublished = {\url{https://github.com/seu-usuario/blogstreamlit}}
 }
+```
+
+---
+
+## 📜 Criando o Arquivo de Licença
+
+Crie um arquivo `LICENSE` com o texto completo da [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.txt).
+
+---
+
+## 📑 Documentação Adicional
+
+### `requirements.txt`
+
+```txt
+streamlit
+sqlalchemy
+passlib
+python-dotenv
+```
+
+### `.gitignore`
+
+```txt
+__pycache__/
+*.pyc
+.env
+venv/
+*.sqlite
+```
+
+### 📘 Desenvolvimento Avançado (Opcional)
+
+Crie um arquivo `docs/DEVELOPMENT.md` com detalhes sobre o desenvolvimento interno do projeto.
+
+---
+
+🚀 **Vamos construir algo incrível!**
