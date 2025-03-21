@@ -6,7 +6,7 @@
 
 Um blog moderno com autenticação de usuários, chatbot integrado e painel administrativo, desenvolvido com Streamlit e Python.
 
-![Captura de Tela](images/demo.png) <!-- Adicione suas imagens na pasta /images -->
+![Captura de Tela](images/cap.png) <!-- Adicione suas imagens na pasta /images -->
 
 ---
 
